@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+</head>
+<body>
+    <script>
+        function play(){
+            let usr_ans = prompt("Rock, Paper, or Scissors?").toUpperCase();
+            let rndm_num = Math.random()*3+1
+            let comp_ans = ""
+
+            if(rndm_num == 1) {
+                comp_ans = "ROCK"
+            } else if(rndm_num == 2) {
+                comp_ans = "PAPER"
+            } else if(rndm_num == 3) {
+                comp_ans = "SCISSORS"
+            }
+
+            if(usr_ans = "ROCK") {
+                if(comp_ans = "ROCK"){
+                    alert("Tie!")
+                } else if(comp_ans = "PAPER"){
+                    alert("You Lose!")
+                } else if(comp_ans = "SCISSORS"){
+                    alert("You Win!")
+                }
+            } else if(usr_ans = "PAPER") {
+                if(comp_ans = "ROCK"){
+                    alert("You Win!")
+                } else if(comp_ans = "PAPER"){
+                    alert("Tie!")
+                } else if(comp_ans = "SCISSORS"){
+                    alert("You Lose!")
+                }
+            } else if(usr_ans = "SCISSORS") {
+                if(comp_ans = "ROCK"){
+                    alert("You Lose!")
+                } else if(comp_ans = "PAPER"){
+                    alert("You Win!")
+                } else if(comp_ans = "SCISSORS"){
+                    alert("Tie!")
+                }
+            }
+        }
+        
+        play()
+
+    </script>
+</body>
+</html>
